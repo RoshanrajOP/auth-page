@@ -1,4 +1,6 @@
 #Next.js Authentication Project
+
+
 Overview
 This project demonstrates a simple authentication system using Next.js, ShadCN UI, Zustand for state management, and Tailwind CSS for styling. The application includes a login page with hardcoded credentials and a protected page accessible only to logged-in users.
 
