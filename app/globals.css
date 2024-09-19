@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #8e8055;
+  /* Off-white shade */
+}
+
+@layer base {
+  :root {
+    --background: 24 20% 95%;
+    /* Warm off-white with beige tone */
+    --foreground: 24 20% 25%;
+    /* Soft brown for contrast */
+    --card: 24 20% 98%;
+    /* Slightly lighter off-white/beige */
+    --card-foreground: 24 20% 25%;
+    /* Soft brown */
+    --popover: 24 20% 97%;
+    /* Similar to card but slightly different */
+    --popover-foreground: 24 20% 25%;
+    /* Soft brown */
+    --primary: 24 20% 40%;
+    /* Medium brown for primary */
+    --primary-foreground: 0 0% 95%;
+    /* Light off-white for contrast */
+    --secondary: 24 10% 90%;
+    /* Light beige for secondary */
+    --secondary-foreground: 24 20% 40%;
+    /* Medium brown */
+    --muted: 24 10% 85%;
+    /* Muted beige */
+    --muted-foreground: 24 15% 45%;
+    /* Muted brown */
+    --accent: 24 10% 80%;
+    /* Light beige */
+    --accent-foreground: 24 20% 40%;
+    /* Medium brown */
+    --destructive: 0 70% 50%;
+    /* A warm red */
+    --destructive-foreground: 0 0% 95%;
+    /* Light off-white */
+    --border: 24 10% 85%;
+    /* Muted beige for borders */
+    --input: 24 10% 85%;
+    /* Same as border */
+    --ring: 24 20% 40%;
+    /* Brown for focus rings */
+    --radius: 0.5rem;
+    --chart-1: 24 30% 75%;
+    /* Beige for chart */
+    --chart-2: 30 30% 60%;
+    /* Muted yellow */
+    --chart-3: 15 30% 55%;
+    /* Muted brown */
+    --chart-4: 40 30% 70%;
+    /* Light ochre */
+    --chart-5: 35 30% 65%;
+    /* Light tan */
+  }
+
+  .dark {
+    --background: 24 20% 25%;
+    /* Soft brown for background in dark mode */
+    --foreground: 0 0% 95%;
+    /* Light off-white for text */
+    --card: 24 20% 20%;
+    /* Slightly lighter dark brown */
+    --card-foreground: 0 0% 95%;
+    /* Light off-white */
+    --popover: 24 20% 20%;
+    /* Same as card */
+    --popover-foreground: 0 0% 95%;
+    /* Light off-white */
+    --primary: 0 0% 95%;
+    /* Light off-white */
+    --primary-foreground: 24 20% 25%;
+    /* Soft brown */
+    --secondary: 24 20% 30%;
+    /* Dark beige */
+    --secondary-foreground: 0 0% 95%;
+    /* Light off-white */
+    --muted: 24 20% 30%;
+    /* Dark beige */
+    --muted-foreground: 0 0% 95%;
+    /* Light off-white */
+    --accent: 24 20% 30%;
+    /* Same as muted */
+    --accent-foreground: 0 0% 95%;
+    /* Light off-white */
+    --destructive: 0 50% 35%;
+    /* Darker warm red */
+    --destructive-foreground: 0 0% 95%;
+    /* Light off-white */
+    --border: 24 20% 30%;
+    /* Dark beige for borders */
+    --input: 24 20% 30%;
+    /* Same as border */
+    --ring: 24 20% 40%;
+    /* Darker brown */
+    --chart-1: 24 30% 45%;
+    /* Dark beige */
+    --chart-2: 30 30% 40%;
+    /* Dark yellow */
+    --chart-3: 15 30% 35%;
+    /* Dark brown */
+    --chart-4: 40 30% 50%;
+    /* Ochre */
+    --chart-5: 35 30% 55%;
+    /* Tan */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
